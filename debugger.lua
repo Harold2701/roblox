@@ -47,3 +47,5 @@ debugger = {
 		end
 	end,
 } 
+
+return debugger
