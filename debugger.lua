@@ -1,3 +1,7 @@
+if game.CoreGui:FindFirstChild("Debugger") then
+	game.CoreGui.Debugger:Destroy()
+end
+
 debugger = {
 	createUI = function()
 		local Debugger = Instance.new("ScreenGui", game.CoreGui)
