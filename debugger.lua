@@ -40,7 +40,7 @@ debugger = {
 			TextLabel.TextWrapped = true
 		end
 		
-		game.CoreGui.Debugger.Frame[label].Text = label..": "..text
+		game.CoreGui.Debugger.Frame[label].Text = label..": "..tostring(text)
 	end,
 	
 	clear = function()
