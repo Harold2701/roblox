@@ -8,7 +8,7 @@ local function findTarget()
     local dist = 9e9
 
     for i,v in pairs(Players:GetPlayers()) do
-        if not v.Character then continue end
+        if not v.Character or v == game.Players.LocalPlayer then continue end
         local root = v.Character:FindFirstChild("HumanoidRootPart")
         if not root then continue end
         local d = (root.Position - Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude
